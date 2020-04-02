@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <label for="songName">Song Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="songName"
+          placeholder="Enter song anme"
+          name="songName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Release">Date of Release:</label>
+        <input
+          type="date"
+          class="form-control"
+          id="releaseDate"
+          placeholder="Enter date of relaese"
+          name="date"
+        />
+      </div>
+      <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Artist</button>
+        <div class="dropdown-content" style="left:0;">
+          <ul>
+            <li>Billie</li>
+            <li>Kanika Kapoor</li>
+            <li>R D Burman</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      
+    <div class ="one">
+      <button type="submit" class="btn btn-default" id="addSongButton" onclick=addNewSong()>
+        Submit
+      </button>
+    </div>
+      <script src="./main.js"></script>
+    </div>
+  </body>
+</html>
